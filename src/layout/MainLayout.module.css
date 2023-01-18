@@ -1,0 +1,8 @@
+.mainlayout {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "body"
+        "footer"
+    ;
+}

@@ -1,0 +1,23 @@
+.halls {
+    height: 100vh;
+    grid-area: body;
+}
+
+.bgimg {
+    background-image: url(../../img/hall17.jpeg);
+    background-size: cover;
+    height: 100%;
+}
+
+.content {
+        padding: 50px;
+}
+
+.descr {
+    font-size: 16px;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.9);
+    color: white;
+    border-radius: 10px;
+}

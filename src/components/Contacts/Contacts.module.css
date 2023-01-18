@@ -1,0 +1,78 @@
+.contacts {
+    height: 100vh;
+    grid-area: body;
+}
+
+.bgimg {
+    background-image: url(../../img/hall9.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.content {
+        padding: 50px;
+}
+
+.descr {
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.8);
+    color: white;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.data {
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 20px;
+    padding: 20px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.data p {
+    margin-bottom: 30px;
+}
+
+.data a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    font-size: large;
+}
+
+.director {
+    background: rgba(40, 40, 40, 0.8);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.director img {
+    border-radius: 10px;
+}
+
+.director p {
+    color: white;
+}
+
+.director span {
+    color: white;
+}
+
+.map {
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,22 @@
+.kitchen {
+    height: 100vh;
+    grid-area: body;
+}
+
+.bgimg {
+    background-image: url(../../img/kitchen2.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.content {
+    padding: 50px;
+}
+
+.descr {
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.8);
+    color: white;
+    border-radius: 10px;
+}

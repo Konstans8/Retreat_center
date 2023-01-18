@@ -1,0 +1,23 @@
+.rooms {
+    height: 100%;
+    grid-area: body;
+}
+
+.bgimg {
+    background-image: url(../../img/room1.jpeg);
+    background-size: cover;
+    height: 100%;
+}
+
+.content {
+    padding: 50px;
+}
+
+.descr {
+    font-size: 16px;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.9);
+    color: white;
+    border-radius: 10px;
+}
