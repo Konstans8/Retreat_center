@@ -1,0 +1,119 @@
+.modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(71, 64, 64, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: all;
+    opacity: 1;
+
+    transition: 0.5s ease-in-out;
+}
+
+.notmodal {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+}
+
+.modalInput {
+    margin: 10px 0 30px 0;
+    width: 400px;
+    margin-right: 0;
+    outline: none;
+}
+
+.modalInput:hover {
+    background-color: rgb(227, 228, 243);
+}
+
+.formularz p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(168, 168, 185);
+    border-radius: 20px;
+    padding: 50px;
+    color: white;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.textarea {
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    width: 400px;
+    height: 70px;
+    margin: 10px 0 30px 0;
+    outline: none;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(148, 77, 214);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.submit:hover {
+    background-color: rgb(63, 36, 201);
+}
+
+.submit:focus {
+    background-color: rgb(120, 112, 164);
+}
+
+.exit {
+    margin: 0;
+}
+
+
+
+
+
+
+/* SecondModal */
+
+
+.finish {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(71, 64, 64, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: all;
+    opacity: 1;
+
+    transition: 0.5s ease-in-out;
+}
+
+.notfinish {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+}

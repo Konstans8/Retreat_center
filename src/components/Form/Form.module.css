@@ -50,6 +50,7 @@ input {
     border: none;
     border-radius: 15px;
     margin-right: 30px;
+    outline: rgb(209, 191, 167);
 }
 
 .placeholder::placeholder {
@@ -65,6 +66,10 @@ input {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: rgb(209, 191, 167);
+}
+
 .submit {
     display: flex;
     justify-content: center;
@@ -74,9 +79,35 @@ input {
     cursor: pointer;
 }
 
+.submit:hover {
+    background-color: rgb(63, 36, 201);
+}
+
+.submit:focus {
+    background-color: rgb(120, 112, 164);
+}
+
 .result {
     display: flex;
     justify-content: center;
     color: white;
     font-size: 32px;
 }
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkboxInput {
+    width: 10px;
+    margin-right: 10px;
+}
+
+.checkbox span {
+    color: white;
+    font-size: 10px;
+}
+

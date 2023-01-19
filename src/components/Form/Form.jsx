@@ -1,8 +1,13 @@
+// import axios from 'axios'
 import { useState } from 'react'
+import Modal from './Modal/Modal'
 import s from './Form.module.css'
 
 
-function Form() {
+
+// console.log(axios)
+
+function Form(props) {
 
     const [startDate, setStartDate] = useState('')
     const [endDate, setEndDate] = useState('')
@@ -14,6 +19,10 @@ function Form() {
     const price = [120, 180, 240, 300, 360, 420]
     const [result, setResult] = useState(0)
     
+    
+    const [modalActive, setModalActive] = useState(false)
+    
+
     function handleChangeStart(e) {
         setStartDate(e.target.value)
         const dateObject = new Date(e.target.value)
@@ -28,7 +37,10 @@ function Form() {
         setDateAsEnd(dateAsEnd)
     }
     
+    // variable days is not valid. Need correct. 
     let days = dateAsEnd - dateAsStart
+    
+    console.log(days)
     
     const getCalc = (event) => {
         event.preventDefault()
@@ -48,35 +60,40 @@ function Form() {
         }
     }
     
-
-    
     return (
         <div className={s.formContainer}>
             <div className={s.form}>
-                <form action="" method='POST' onSubmit={getCalc}>
+                <form action="https://jsonplaceholder.typicode.com/posts" method='POST' >
                     <h2 className={s.title}>Rezerwacja grup zorganizowanych</h2>      
                     <div className={s.inputsContainer}>
                         <div>
                             <p className={s.inputsTitle}>Zjazd</p>
-                            <input type="date" value={startDate} onChange={handleChangeStart}/>
+                            <input type="date" value={startDate} name='date-start' onChange={handleChangeStart}/>
                         </div>
                         <div>
                             <p className={s.inputsTitle}>Wyjazd</p>
-                            <input type="date" value={endDate} onChange={handleChangeEnd}/>
+                            <input type="date" value={endDate} name='date-end' onChange={handleChangeEnd}/>
                         </div>
                         <div>
                             <p className={s.inputsTitle}>Grupa</p>
-                            <input className={s.placeholder} placeholder='Ilosc osob?' onChange={(e) => setPerson(e.target.value)} id='persons'/>
+                            <input className={s.placeholder} placeholder='Ilosc osob?' name='persons' onChange={(e) => setPerson(e.target.value)} id='persons'/>
                         </div>
                         <div>
                             <button className={s.btn} onClick={getCalc}>Oblicz koszt pobytu</button>
                         </div>
                     </div>
                     
-                    <p className={s.result}>{result} $</p>
+                    <p className={s.result} id='price'>{result} zl</p>
 
-                    <input className={s.submit} type="submit" value="Zostaw zgloszenie" />
+                    <div className={s.checkbox}>
+                        <input className={s.checkboxInput} type="checkbox" name="checkbox" id="checkbox" /><span>Wyrazam zgode na prztwarzanie danych</span>
+                    </div>
+                    
+                    <input className={s.submit} type="button" value="Zostaw zgloszenie" onClick={() => setModalActive(true)}/>
+                    
+                    <Modal active={modalActive} setActive={setModalActive}/>
                 </form>
+                
             </div>
         </div>
     )
