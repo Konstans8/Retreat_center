@@ -19,8 +19,9 @@ function Form(props) {
     const price = [120, 180, 240, 300, 360, 420]
     const [result, setResult] = useState(0)
     
-    
     const [modalActive, setModalActive] = useState(false)
+    
+    const [isChecked, setIsChecked] = useState(false);
     
 
     function handleChangeStart(e) {
@@ -86,10 +87,11 @@ function Form(props) {
                     <p className={s.result} id='price'>{result} zl</p>
 
                     <div className={s.checkbox}>
-                        <input className={s.checkboxInput} type="checkbox" name="checkbox" id="checkbox" /><span>Wyrazam zgode na prztwarzanie danych</span>
+                        <input className={s.checkboxInput} type="checkbox" name="checkbox" id="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)}/>
+                        <span>Wyrazam zgode na prztwarzanie danych</span>
                     </div>
                     
-                    <input className={s.submit} type="button" value="Zostaw zgloszenie" onClick={() => setModalActive(true)}/>
+                    <input className={s.submit} type="button" value="Zostaw zgloszenie" onClick={() => setModalActive(true)} disabled={!isChecked}/>
                     
                     <Modal active={modalActive} setActive={setModalActive}/>
                 </form>
