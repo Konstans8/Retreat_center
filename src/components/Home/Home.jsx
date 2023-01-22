@@ -9,7 +9,7 @@ function Home() {
         <div className={s.home}>
             <div className={s.bgimg}></div>
             <div className={s.content}>
-                <h1 className={s.title}>Marianski Dom Rekolekcyjny w Sulejuwku</h1>
+                <h1 className={s.title}>Mariański Dom Rekolekcyjny w Sulejówku</h1>
                 <div>
                     <NavLink className={s.btn} to='reservation'>Rezerwacja</NavLink>
                 </div>

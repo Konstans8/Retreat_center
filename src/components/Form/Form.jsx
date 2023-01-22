@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Modal from './Modal/Modal'
 import s from './Form.module.css'
+// import moment from 'moment'
 
 
 
@@ -38,8 +39,22 @@ function Form(props) {
         setDateAsEnd(dateAsEnd)
     }
     
-    // variable days is not valid. Need correct. 
-    let days = dateAsEnd - dateAsStart
+    let days
+    
+    if(dateAsStart === 29 && dateAsEnd === 1) {
+        days = 32 - dateAsStart
+    } else if(dateAsStart === 30) {
+        days = 0 + dateAsEnd
+    } else if(dateAsStart === 31) {
+        days = 1 + dateAsEnd
+    } else {
+        days = dateAsEnd - dateAsStart
+    }
+    
+    
+    
+    console.log(dateAsEnd)
+    console.log(dateAsStart)
     
     console.log(days)
     
