@@ -38,15 +38,21 @@
 }
 
 .data p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .data a {
     color: white;
     text-decoration: none;
     margin-left: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: large;
+}
+
+.address p {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .director {
