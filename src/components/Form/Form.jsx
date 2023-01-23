@@ -79,7 +79,7 @@ function Form(props) {
     return (
         <div className={s.formContainer}>
             <div className={s.form}>
-                <form action="https://jsonplaceholder.typicode.com/posts" method='POST' >
+                <form action="../../../send.php" method='POST' >
                     <h2 className={s.title}>Rezerwacja grup zorganizowanych</h2>      
                     <div className={s.inputsContainer}>
                         <div>
