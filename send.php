@@ -32,10 +32,9 @@ $address="kostian73kostian@gmail.com";
 $note_text="Тема : $form \r\nИмя : $name \r\n Email : $email \r\n Дополнительная информация : $textarea";
 
 if (isset($name)  &&  isset ($sab) ) {
-mail($address,$form,$note_text,"Content-type:text/plain; windows-1251"); 
-// сообщение после отправки формы
+mail($address,$form,$note_text,"Content-type: text/plain"); 
+
     
-echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$name</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b style='color:red;'> $email</b>.</p>";
 }
 
 ?>
