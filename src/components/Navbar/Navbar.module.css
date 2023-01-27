@@ -4,6 +4,16 @@
     justify-content: space-between;
     padding: 10px 50px;
     grid-area: header;
+    position: relative;
+}
+
+.openMenu {
+    display: none;
+}
+
+.burgerMenuContainer {
+    display: none;
+    position: absolute;
 }
 
 .logo {
@@ -27,6 +37,10 @@
     margin-right: 50px;
 }
 
+.btnNav {
+    display: none;
+}
+
 .btnContainer {
     display: flex;
     align-items: center;
@@ -40,4 +54,50 @@
     border: none;
     border-radius: 10px;
     text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(78, 78, 225);
+    color: white;
+}
+.btn:focus {
+    background-color: rgb(69, 69, 75);
+    color: white;
+}
+.btn:active {
+    background-color: rgb(43, 43, 197);
+    color: white;
+}
+
+
+
+@media(max-width: 1200px) {
+    .navbar {
+        display: none;
+    }
+    
+    .openMenu {
+        display: block;
+        border: none;
+        background: transparent; 
+    }
+    
+    .iconMenu {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .iconMenu:hover {
+        color: rgb(133, 108, 221);
+    }
+}
+
+@media(max-width: 600px) {
+    .logo {
+        display: none;
+    }
+    
+    .openMenu {
+        display: block;
+    }
 }

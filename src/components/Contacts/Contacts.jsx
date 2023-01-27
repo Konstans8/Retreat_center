@@ -20,11 +20,6 @@ function Contacts() {
                             <p className={s.tel}>Telefon:</p>
                             <a href="tel:+48511567230">511 567 230</a>
                         </div>
-                        <div className={s.director}>
-                            <img src="https://www.marianie.pl/uploads/TsInstitutions/pictures-members/mini_members_101.jpg?v=1663601944" alt="Prist" />
-                            <p>Ks. Dariusz Marzewski MIC</p>
-                            <span>Dyrektor Domu Rekolekcyjnego</span>
-                        </div>
                     </div>
                 </div>    
             </div>

@@ -4,23 +4,28 @@ import Home from './components/Home/Home'
 import Rooms from './components/Rooms/Rooms'
 import Halls from './components/Halls/Halls'
 import Kitchen from './components/Kitchen/Kitchen'
+import Plan from './components/Plan/Plan'
 import Contacts from './components/Contacts/Contacts';
+import Galeria from './components/Galeria/Galeria';
 import Form from './components/Form/Form';
 import './App.css';
 
 
 
-function App() {
+function App(props) {
+
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
           <Route path='/' element={<MainLayout/>}>
-            <Route index element={<Home />}/>
+            <Route index element={<Home/>}/>
             <Route path='rooms' element={<Rooms />}/>
             <Route path='conference-hall' element={<Halls />}/>
             <Route path='kitchen' element={<Kitchen />}/>
+            <Route path='plan' element={<Plan/>}/>
             <Route path='contacts' element={<Contacts />}/>
+            <Route path='galeria' element={<Galeria />}/>
             <Route path='reservation' element={<Form />}/>
             <Route path='*' element={<h1>Not found</h1>}/>
           </Route>

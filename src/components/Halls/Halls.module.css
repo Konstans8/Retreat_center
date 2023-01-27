@@ -13,6 +13,14 @@
         padding: 50px;
 }
 
+.title {
+    background: rgba(40, 40, 40, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
 .descr {
     font-size: 16px;
     max-width: 800px;

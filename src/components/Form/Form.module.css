@@ -1,11 +1,11 @@
 .formContainer {
     background-image: url(../Home/Budynek.png);
-    height: 100vh;
+    height: 1000px;
 }
 
 .title {
     font-size: 30px;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     color: white;
     margin-bottom: 70px;
     display: flex;
@@ -24,37 +24,69 @@
 
 .inputsContainer {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    width: 600px;
 }
 
 .inputsTitle {
-    color: white;
-    
+    color: white;  
 }
 
-.response {
-    height: 40px;
-    margin-top: 50px;
-    font-size: 34px;
-    color: white;
+.dateContainer {
     display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
-    
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
-input {
+.date {
     font-size: 15px;
-    width: 170px;
+    width: 270px;
     padding: 13px 30px;
     border: none;
     border-radius: 15px;
-    margin-right: 30px;
     outline: rgb(209, 191, 167);
 }
 
-.placeholder::placeholder {
+.personsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.persons {
+    font-size: 15px;
+    width: 150px;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 15px;
+    outline: rgb(209, 191, 167);
+}
+
+.persons::placeholder {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.checkboxContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.checkboxItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .btn {
@@ -70,12 +102,26 @@ input {
     background-color: rgb(209, 191, 167);
 }
 
+/* .response {
+    height: 40px;
+    margin-top: 50px;
+    font-size: 34px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px; 
+} */
+
 .submit {
     display: flex;
     justify-content: center;
     margin: auto;
     background-color: rgb(148, 77, 214);
     color: white;
+    font-size: 15px;
+    padding: 13px 30px;
+    border-radius: 15px;
+    border: none;
     cursor: pointer;
 }
 

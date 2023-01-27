@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding:  20px 20px 20px 50px;
+    background-color: rgb(200, 200, 222);
+    align-items: flex-start;
+    max-width: 500px;
+    z-index: 10;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding:  20px 20px 20px 50px;
+    background-color: rgb(200, 200, 222);
+    align-items: flex-start;
+    max-width: 500px;
+    z-index: 10;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+
+.exit {
+    margin-left: auto;
+    border: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.iconMenu {
+    color: white;
+    font-size: 30px;
+}
+
+.iconMenu:hover {
+    color: rgb(116, 116, 227);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.navbar a:not(:last-child) {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:not(:last-child):hover {
+    color: rgb(158, 136, 219);
+}
+
+.btnNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 124, 230);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.btnNav:hover {
+    background-color: rgb(71, 1, 185);
+    color: white;
+}

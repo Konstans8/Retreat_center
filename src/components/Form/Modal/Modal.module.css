@@ -24,9 +24,13 @@
 
 .modalInput {
     margin: 10px 0 30px 0;
-    width: 400px;
+    width: 500px;
     margin-right: 0;
     outline: none;
+    font-size: 15px;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 15px;
 }
 
 .modalInput:hover {
@@ -58,7 +62,7 @@
     border: none;
     border-radius: 15px;
     padding: 10px 25px;
-    width: 400px;
+    width: 500px;
     height: 70px;
     margin: 10px 0 30px 0;
     outline: none;
@@ -72,6 +76,10 @@
     color: white;
     cursor: pointer;
     margin-bottom: 50px;
+    font-size: 15px;
+    padding: 13px 30px;
+    border-radius: 15px;
+    border: none;
 }
 
 .submit:hover {

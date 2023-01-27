@@ -4,9 +4,13 @@ import { useState } from 'react'
 import s from './Modal.module.css'
 
 
-function Modal({active, setActive, name}) {
+function Modal({active, setActive}) {
 
     const [isChecked, setIsChecked] = useState(false)
+    
+    function test() {
+        return isChecked ? 'Loading...' : setIsChecked(!isChecked)
+    }
 
     return (
         <div className={active ? s.modal : s.notmodal} onClick={() => setActive(false)}>
@@ -14,7 +18,7 @@ function Modal({active, setActive, name}) {
                 <p className={s.title}>Wypelnij formularz</p>
                 <div className={s.formularz}>
                     <p>Imie</p>
-                    <input className={s.modalInput} type="text" name='name' checked={isChecked} onChange={() => setIsChecked(!isChecked)}/>
+                    <input className={s.modalInput} type="text" name='name' checked={isChecked} onChange={test}/>
                 </div>
                 <div className={s.formularz}>
                     <p>Telefon</p>

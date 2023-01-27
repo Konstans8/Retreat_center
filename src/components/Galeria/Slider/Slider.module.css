@@ -1,0 +1,12 @@
+
+
+.item {
+    height: 700px;
+}
+
+
+.caption {
+    color: white;
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 20px;
+}
