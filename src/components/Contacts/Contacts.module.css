@@ -65,3 +65,13 @@
 }
 
 
+@media(max-width: 800px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .descr {
+        font-size: 14px;
+        max-width: 600px;
+    }
+}

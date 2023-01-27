@@ -8,7 +8,7 @@ import s from './Form.module.css'
 
 // console.log(axios)
 
-function Form(props) {
+function Form() {
 
     const [startDate, setStartDate] = useState('')
     const [endDate, setEndDate] = useState('')
@@ -86,8 +86,8 @@ function Form(props) {
     
     return (
         <div className={s.formContainer}>
-            <div className={s.form}>
-                <form action="https://jsonplaceholder.typicode.com/posts" method='POST' >
+            <div className={s.formArea}>
+                <form className={s.form} action="https://jsonplaceholder.typicode.com/posts" method='POST' >
                     <h2 className={s.title}>Rezerwacja grup zorganizowanych</h2>      
                     <div className={s.inputsContainer}>
                         <div className={s.dateContainer}>
@@ -102,7 +102,7 @@ function Form(props) {
                         </div>
                         <div className={s.personsContainer}>
                             <div>
-                                <p className={s.inputsTitle}>Grupa</p>
+                                <p className={s.inputsTitle}>Grupa(wszyscy)</p>
                                 <input className={s.persons} placeholder='Ilosc osob?' name='persons' onChange={(e) => setPerson(e.target.value)} id='persons'/>
                             </div>
                             <div>
@@ -136,7 +136,7 @@ function Form(props) {
                         <span>Wyrazam zgode na prztwarzanie danych</span>
                     </div>
                     
-                    <input className={s.submit} type="button" value="Zostaw zgloszenie" onClick={() => setModalActive(true)} disabled={!isChecked}/>
+                    <input className={s.submit} type="button" value="Zostaw zgloszenie" onClick={() => setModalActive(!modalActive)} disabled={!isChecked}/>
                     
                     <Modal active={modalActive} setActive={setModalActive}/>
                 </form>

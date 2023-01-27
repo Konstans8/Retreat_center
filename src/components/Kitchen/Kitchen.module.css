@@ -1,12 +1,12 @@
 .kitchen {
-    height: 100vh;
+    height: 100%;
     grid-area: body;
 }
 
 .bgimg {
     background-image: url(../../img/kitchen2.jpeg);
     background-size: cover;
-    height: 100vh;
+    height: 1200px;
 }
 
 .content {
@@ -22,9 +22,20 @@
 }
 
 .descr {
-    max-width: 1200px;
+    max-width: 700px;
     padding: 20px;
     background: rgba(40, 40, 40, 0.8);
     color: white;
     border-radius: 10px;
+}
+
+@media(max-width: 800px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .descr {
+        font-size: 14px;
+        max-width: 600px;
+    }
 }

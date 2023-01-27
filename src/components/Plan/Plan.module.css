@@ -1,12 +1,12 @@
 .plan {
-    height: 100vh;
+    height: 100%;
     grid-area: body;
 }
 
 .bgimg {
     background-image: url(../../img/hall3.jpeg);
     background-size: cover;
-    height: 100vh;
+    height: 1200px;
 }
 
 .content {
@@ -30,4 +30,15 @@
     background: rgba(40, 40, 40, 0.8);
     color: white;
     border-radius: 10px;
+}
+
+@media(max-width: 800px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .descr {
+        font-size: 14px;
+        max-width: 600px;
+    }
 }

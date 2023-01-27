@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-
+import { MdOutlineClose } from 'react-icons/md'
 import s from './Modal.module.css'
 
 
@@ -13,8 +13,11 @@ function Modal({active, setActive}) {
     }
 
     return (
-        <div className={active ? s.modal : s.notmodal} onClick={() => setActive(false)}>
+        <div className={active ? s.modal : s.notmodal} onClick={() => setActive(!active)}>
             <div className={s.content} onClick={e => e.stopPropagation()}>
+                <button className={s.exit} onClick={() => setActive(!active)} disabled={!active}>
+                    <MdOutlineClose className={s.exit}/>
+                </button>
                 <p className={s.title}>Wypelnij formularz</p>
                 <div className={s.formularz}>
                     <p>Imie</p>
@@ -33,7 +36,6 @@ function Modal({active, setActive}) {
                     <textarea className={s.textarea}  name="textarea" />
                 </div>
                 <input className={s.submit} type="submit" value="Wyslij" disabled={!isChecked}/>
-                <p className={s.exit}>Zeby wyjsc stad kliknij na ekran poza formularzem</p>
             </div>
             
         </div>

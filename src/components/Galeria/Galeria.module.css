@@ -1,5 +1,5 @@
 .galeria {
-    height: 100vh;
+    height: 100%;
     grid-area: body;
 }
 
@@ -7,7 +7,7 @@
     /* background-image: url(../../img/hall15.jpeg); */
     background: rgba(40, 40, 40, 0.4);
     background-size: cover;
-    height: 100vh;
+    height: 1200px;
 }
 
 .content {
@@ -34,4 +34,20 @@
 .image {
     width: 1000px;
     height: 700px;
+}
+
+
+@media(max-width: 800px) {
+    .bgimg {
+        height: 700px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .descr {
+        font-size: 14px;
+        max-width: 600px;
+    }
 }

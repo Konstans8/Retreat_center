@@ -1,11 +1,10 @@
 .formContainer {
     background-image: url(../Home/Budynek.png);
-    height: 1000px;
+    height: 1300px;
 }
 
 .title {
     font-size: 30px;
-    /* letter-spacing: 5px; */
     color: white;
     margin-bottom: 70px;
     display: flex;
@@ -13,7 +12,7 @@
 }
 
 
-.form {
+.formArea {
     background: rgba(40, 40, 40, 0.9);
     width: 100%;
     height: 100%;
@@ -25,7 +24,7 @@
 .inputsContainer {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 700px;
 }
 
 .inputsTitle {
@@ -102,16 +101,6 @@
     background-color: rgb(209, 191, 167);
 }
 
-/* .response {
-    height: 40px;
-    margin-top: 50px;
-    font-size: 34px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px; 
-} */
-
 .submit {
     display: flex;
     justify-content: center;
@@ -157,3 +146,87 @@
     font-size: 10px;
 }
 
+
+
+@media(max-width: 768px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        justify-content: center;
+        font-size: 24px;
+        width: 200px;
+    }
+    
+    .inputsContainer {
+        width: 300px;
+    }
+    
+    .dateContainer {
+        margin-bottom: 40px;
+    }
+    
+    .date {
+        font-size: 14px;
+        width: 100px;
+        padding: 15px 15px;
+    }
+    
+    .personsContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    .persons {
+        font-size: 14px;
+        width: 150px;
+        padding: 15px 30px;
+        margin-bottom: 20px;
+    }
+    
+    .checkboxContainer {
+        flex-direction: column;
+    }
+    
+    .checkboxItem {
+        margin-top: 30px;
+    }
+    
+    .check {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .btnContainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+    .btn {
+        font-size: 15px;
+        padding: 13px 30px;
+        border-radius: 15px;
+        border: none;
+        background: white;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 360px) {
+    .inputsContainer {
+        width: 280px;
+    }
+    
+    .dateContainer {
+        margin-bottom: 40px;
+    }
+    
+    .date {
+        width: 70px;
+    }
+}
