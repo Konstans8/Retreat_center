@@ -3,15 +3,6 @@
 // import s from './Slider.module.css'
 
 
-import test from '../../../img/1673951247499.jpeg'
-import test1 from '../../../img/hall10.jpeg'
-import test2 from '../../../img/kitchen2.jpeg'
-import test3 from '../../../img/hall5.jpeg'
-import test4 from '../../../img/room1.jpeg'
-import test5 from '../../../img/1673951247573.jpeg'
-import test6 from '../../../img/hall20.jpeg'
-
-
 // function Slider() {
     
 //     return (
@@ -103,6 +94,21 @@ import test6 from '../../../img/hall20.jpeg'
 
 
 
+import slide1 from '../../../img/slide1.jpeg'
+import slide2 from '../../../img/slide2.jpeg'
+import slide3 from '../../../img/slide3.jpeg'
+import slide4 from '../../../img/slide4.jpeg'
+import slide5 from '../../../img/slide5.jpeg'
+import slide6 from '../../../img/slide6.jpeg'
+import slide7 from '../../../img/slide7.jpeg'
+import slide8 from '../../../img/slide8.jpeg'
+import slide9 from '../../../img/slide9.jpeg'
+import slide10 from '../../../img/slide10.jpeg'
+import slide11 from '../../../img/slide11.jpeg'
+import slide12 from '../../../img/slide12.jpeg'
+import slide13 from '../../../img/slide13.jpeg'
+import slide14 from '../../../img/slide14.jpeg'
+import slide15 from '../../../img/slide15.jpeg'
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -135,31 +141,49 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className='image' src={test} alt='imageName'/>
+          <img className='image' src={slide1} alt='imageName'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img className='image' src={test1} alt='imageName'/>
+          <img className='image' src={slide2} alt='imageName'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img className='image' src={test2} alt='imageName'/>
+          <img className='image' src={slide3} alt='imageName'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img className='image' src={test3} alt='imageName'/>
+          <img className='image' src={slide4} alt='imageName'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img className='image' src={test4} alt='imageName'/>
+          <img className='image' src={slide5} alt='imageName'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img className='image' src={test5} alt='imageName'/>
+          <img className='image' src={slide6} alt='imageName'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img className='image' src={test6} alt='imageName'/>
+          <img className='image' src={slide7} alt='imageName'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img className='image' src={test3} alt='imageName'/>
+          <img className='image' src={slide8} alt='imageName'/>
         </SwiperSlide>
         <SwiperSlide>
-          <img className='image' src={test5} alt='imageName'/>
+          <img className='image' src={slide9} alt='imageName'/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide10} alt='imageName'/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide11} alt='imageName'/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide12} alt='imageName'/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide13} alt='imageName'/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide14} alt='imageName'/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide15} alt='imageName'/>
         </SwiperSlide>
       </Swiper>
     </>

@@ -106,21 +106,21 @@ function Form() {
                                 <input className={s.persons} placeholder='Ilosc osob?' name='persons' onChange={(e) => setPerson(e.target.value)} id='persons'/>
                             </div>
                             <div>
-                                <p className={s.inputsTitle}>Dzieci powyzej 6 roku</p>
+                                <p className={s.inputsTitle}>Dzieci powyżej 6 roku</p>
                                 <input className={s.persons} placeholder='Ilosc osob?' name='children over 6 years old'/>
                             </div>
                             <div>
-                                <p className={s.inputsTitle}>Dzieci ponizej 6 roku</p>
+                                <p className={s.inputsTitle}>Dzieci poniżej 6 roku</p>
                                 <input className={s.persons} placeholder='Ilosc osob?' name='children under 6 years old'/>
                             </div>
                         </div>
                         <div className={s.checkboxContainer}>
                             <div className={s.checkboxItem}>
-                                <p className={s.inputsTitle}>Sala konferencyjna dla 80 osob</p>
+                                <p className={s.inputsTitle}>Sala konferencyjna dla 80 osób</p>
                                 <input type='checkbox' className={s.check} name='hall for 80 persons' onChange={test}/>
                             </div>
                             <div className={s.checkboxItem}>
-                                <p className={s.inputsTitle}>Sala konferencyjna dla 25 osob</p>
+                                <p className={s.inputsTitle}>Sala konferencyjna dla 25 osób</p>
                                 <input type='checkbox' className={s.check} name='hall for 25 persons' />
                             </div>
                         </div>
@@ -133,10 +133,10 @@ function Form() {
 
                     <div className={s.checkbox}>
                         <input className={s.checkboxInput} type="checkbox" name="accepting to the processing of personal data" id="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)}/>
-                        <span>Wyrazam zgode na prztwarzanie danych</span>
+                        <span>Wyrażam zgodę na przetwarzanie danych</span>
                     </div>
                     
-                    <input className={s.submit} type="button" value="Zostaw zgloszenie" onClick={() => setModalActive(!modalActive)} disabled={!isChecked}/>
+                    <input className={s.submit} type="button" value="Zostaw zgłoszenie" onClick={() => setModalActive(!modalActive)} disabled={!isChecked}/>
                     
                     <Modal active={modalActive} setActive={setModalActive}/>
                 </form>

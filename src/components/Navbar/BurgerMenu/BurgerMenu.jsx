@@ -20,7 +20,7 @@ function BurgerMenu({active, setActive}) {
             <nav className={s.navbar} onClick={e => e.stopPropagation()}>
                 <NavLink to='/' style={({ isActive }) =>
                   isActive ? activeStyle : undefined
-                } onClick={() => setActive(false)}>Glowna</NavLink>
+                } onClick={() => setActive(false)}>Główna</NavLink>
                 <NavLink to='rooms' style={({ isActive }) =>
                   isActive ? activeStyle : undefined
                 } onClick={() => setActive(false)}>Pokoje</NavLink>

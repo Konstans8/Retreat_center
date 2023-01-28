@@ -4,3 +4,20 @@
     color: white;
     grid-area: footer;
 }
+
+.info {
+    font-size: 16px;
+}
+
+@media(max-width: 768px) {
+    .footer {
+        padding: 10px 50px;
+        background: rgb(103, 101, 101);
+        color: white;
+        grid-area: footer;
+    }
+    
+    .info {
+        font-size: 12px;
+    }
+}

@@ -1,10 +1,10 @@
 .halls {
-    height: 100vh;
+    height: 1000px;
     grid-area: body;
 }
 
 .bgimg {
-    background-image: url(../../img/hall17.jpeg);
+    background-image: url(../../img/hall.jpeg);
     background-size: cover;
     height: 100%;
 }

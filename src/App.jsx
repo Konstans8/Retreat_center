@@ -8,7 +8,9 @@ import Plan from './components/Plan/Plan'
 import Contacts from './components/Contacts/Contacts';
 import Galeria from './components/Galeria/Galeria';
 import Form from './components/Form/Form';
+import NotFound from './components/NotFound/NotFound';
 import './App.css';
+
 
 
 
@@ -27,7 +29,7 @@ function App(props) {
             <Route path='contacts' element={<Contacts />}/>
             <Route path='galeria' element={<Galeria />}/>
             <Route path='reservation' element={<Form />}/>
-            <Route path='*' element={<h1>Not found</h1>}/>
+            <Route path='*' element={<NotFound />}/>
           </Route>
         </Routes>
       </div>

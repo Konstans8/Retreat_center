@@ -1,13 +1,13 @@
 .contacts {
-    height: 100vh;
+    height: 100%;
     grid-area: body;
 }
 
 .bgimg {
-    background-image: url(../../img/hall9.jpeg);
+    background-image: url(../../img/slide5.jpeg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 1000px;
 }
 
 .content {
