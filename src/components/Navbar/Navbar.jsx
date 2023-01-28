@@ -25,7 +25,7 @@ function Navbar() {
             <nav className={s.navbar} on>
                 <NavLink to='/' style={({ isActive }) =>
                   isActive ? activeStyle : undefined
-                }>Glowna</NavLink>
+                }>Główna</NavLink>
                 <NavLink to='rooms' style={({ isActive }) =>
                   isActive ? activeStyle : undefined
                 }>Pokoje</NavLink>
