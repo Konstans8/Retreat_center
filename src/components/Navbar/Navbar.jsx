@@ -22,7 +22,7 @@ function Navbar() {
               <RxHamburgerMenu className={s.iconMenu}/>
             </button>
             <img src={logo} alt="logo" className={s.logo}/>
-            <nav className={s.navbar} on>
+            <nav className={s.navbar}>
                 <NavLink to='/' style={({ isActive }) =>
                   isActive ? activeStyle : undefined
                 }>Główna</NavLink>

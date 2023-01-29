@@ -20,6 +20,7 @@ function Form() {
     const price = [140, 280, 420, 560, 700, 840, 980, 1120]
     
     const [hall80, setHall80] = useState(0)
+    const [hall25, setHall25] = useState(0)
     
     const [result, setResult] = useState(0)
     
@@ -54,33 +55,27 @@ function Form() {
         days = dateAsEnd - dateAsStart
     }
     
-
-    function test() {
-        return hall80 ? 0 : setHall80(10000000)
-    }
-    
-    console.log(hall80)
     
     
     const getCalc = (event) => {
-        event.preventDefault()
+        event.preventDefault(Number)
         
         if(days === 1) {
-            setResult(person * price[0])
+            setResult(person * price[0] + Number(hall80) + Number(hall25))
         } else if(days === 2) {
-            setResult(person * price[1])
+            setResult(person * price[1] + Number(hall80) + Number(hall25))
         } else if(days === 3) {
-            setResult(person * price[2])
+            setResult(person * price[2] + Number(hall80) + Number(hall25))
         } else if(days === 4) {
-            setResult(person * price[3])
+            setResult(person * price[3] + Number(hall80) + Number(hall25))
         } else if(days === 5) {
-            setResult(person * price[4])
+            setResult(person * price[4] + Number(hall80) + Number(hall25))
         } else if(days === 6) {
-            setResult(person * price[5])
+            setResult(person * price[5] + Number(hall80) + Number(hall25))
         } else if(days === 7) {
-            setResult(person * price[6])
+            setResult(person * price[6] + Number(hall80) + Number(hall25))
         } else if(days === 8) {
-            setResult(person * price[7])
+            setResult(person * price[7] + Number(hall80) + Number(hall25))
         }
     }
     
@@ -117,11 +112,11 @@ function Form() {
                         <div className={s.checkboxContainer}>
                             <div className={s.checkboxItem}>
                                 <p className={s.inputsTitle}>Sala konferencyjna dla 80 osób</p>
-                                <input type='checkbox' className={s.check} name='hall for 80 persons' onChange={test}/>
+                                <input type='checkbox' className={s.check} name='hall for 80 persons' value={(Number(hall80)) ? 0 : 230} onChange={(e) => setHall80(e.target.value)}/>
                             </div>
                             <div className={s.checkboxItem}>
                                 <p className={s.inputsTitle}>Sala konferencyjna dla 25 osób</p>
-                                <input type='checkbox' className={s.check} name='hall for 25 persons' />
+                                <input type='checkbox' className={s.check} name='hall for 25 persons' value={(Number(hall25)) ? 0 : 130} onChange={(e) => setHall25(e.target.value)}/>
                             </div>
                         </div>
                         <div className={s.btnContainer}>
@@ -129,7 +124,7 @@ function Form() {
                         </div>
                     </div>
                     
-                    <p className={s.result} id='price'>{result} zl</p>
+                    <p className={s.result} id='price' data-editorblocktype="Text" name='RESULTS'>{result} zl</p>
 
                     <div className={s.checkbox}>
                         <input className={s.checkboxInput} type="checkbox" name="accepting to the processing of personal data" id="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)}/>
