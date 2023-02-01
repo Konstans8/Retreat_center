@@ -4,7 +4,7 @@
 }
 
 .bgimg {
-    background-image: url(../../img/room1.jpeg);
+    background-image: url(../../img/room1.webp);
     background-size: cover;
     height: 100%;
 }
@@ -14,7 +14,7 @@
 }
 
 .title {
-    background: rgba(40, 40, 40, 0.8);
+    background: rgba(40, 40, 40, 0.9);
     color: white;
     padding: 10px;
     border-radius: 10px;

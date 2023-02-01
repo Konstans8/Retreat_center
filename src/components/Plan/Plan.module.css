@@ -4,7 +4,7 @@
 }
 
 .bgimg {
-    background-image: url(../../img/plan.jpeg);
+    background-image: url(../../img/plan.webp);
     background-size: cover;
     height: 1200px;
 }
@@ -17,7 +17,7 @@
 }
 
 .title {
-    background: rgba(40, 40, 40, 0.8);
+    background: rgba(40, 40, 40, 0.9);
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -25,9 +25,9 @@
 }
 
 .descr {
-    max-width: 1200px;
-    padding: 20px;
-    background: rgba(40, 40, 40, 0.8);
+    max-width: 600px;
+    padding: 50px;
+    background: rgba(40, 40, 40, 0.9);
     color: white;
     border-radius: 10px;
 }

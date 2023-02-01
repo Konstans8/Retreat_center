@@ -4,7 +4,7 @@
 }
 
 .bgimg {
-    background-image: url(../../img/hall.jpeg);
+    background-image: url(../../img/hall.webp);
     background-size: cover;
     height: 100%;
 }
@@ -14,7 +14,7 @@
 }
 
 .title {
-    background: rgba(40, 40, 40, 0.8);
+    background: rgba(40, 40, 40, 0.9);
     color: white;
     padding: 10px;
     border-radius: 10px;

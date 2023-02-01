@@ -93,6 +93,11 @@
 }
 
 @media(max-width: 600px) {
+    .container {
+        padding: 10px 30px;
+
+    }
+
     .logo {
         display: none;
     }

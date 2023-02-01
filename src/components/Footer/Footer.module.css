@@ -11,7 +11,7 @@
 
 @media(max-width: 768px) {
     .footer {
-        padding: 10px 50px;
+        padding: 10px 30px;
         background: rgb(103, 101, 101);
         color: white;
         grid-area: footer;

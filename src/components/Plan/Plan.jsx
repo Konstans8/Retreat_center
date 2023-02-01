@@ -6,7 +6,18 @@ function Plan() {
             <div className={s.bgimg}>
                 <div className={s.content}>
                     <h1 className={s.title}>Regulamin</h1>
-                    <p className={s.descr}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, praesentium sed libero architecto non autem deleniti dicta sapiente. Tenetur ad, aliquid nam non aliquam est perspiciatis nesciunt corporis ex molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat fugiat assumenda, sint rerum eveniet quisquam amet, fuga debitis corrupti nulla molestiae, ad dicta nobis architecto veritatis nam dolore nemo a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed architecto accusantium commodi delectus quaerat incidunt quos non quod eos unde sequi iste aperiam at, aut veniam sit culpa nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quis voluptatem animi optio ducimus fuga ut deserunt voluptate dolor ipsum maxime, facere quam repellendus, dicta aut? Amet error vitae ullam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, excepturi inventore! Nostrum at totam asperiores! Iusto deleniti harum, sapiente mollitia delectus tempore. Minima adipisci repudiandae hic porro suscipit ab expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nulla autem nemo? Ex dignissimos asperiores voluptatem eos modi nobis quisquam, neque atque voluptatibus eius cupiditate doloremque reprehenderit aliquam animi mollitia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates repellat nesciunt adipisci ipsum debitis id quos architecto, dolor amet, ipsam provident maxime. Facere laboriosam officia perspiciatis rem natus eius alias!</p>
+                    <ol className={s.descr}>
+                        <li>Godziny ciszy: Przestrzegaj ciszy od 22:00 do 6:00.</li>
+                        <li>Czystość: Dbaj o czystość swojego pokoju i wspólnych pomieszczeń.</li>
+                        <li>Palenie i alkohol: Palenie i spożywanie alkoholu są surowo zabronione na terenie ośrodka.</li>
+                        <li>Goście: Nie wolno wpuszczać gości do ośrodka.</li>
+                        <li>Jedzenie: Nie wolno przynosić zewnętrznego jedzenia lub napojów do ośrodka. Posiłki są zapewnione.</li>
+                        <li>Urządzenia elektroniczne: Ogranicz korzystanie z urządzeń elektronicznych (komórek, laptopów itp.) i nie naruszaj spokojnej atmosfery ośrodka.</li>
+                        <li>Mienie: Nie uszkadzaj ani nie usuwaj mienia należącego do ośrodka.</li>
+                        <li>Szacunek: Okazuj szacunek dla innych uczestników, personelu i mienia.</li>
+                        <li>Sytuacje nagłe: W przypadku sytuacji nagłej niezwłocznie skontaktuj się z personel.</li>
+                        <li>Leki: Trzymaj wszystkie leki w oryginalnych opakowaniach i poinformuj personel o specjalnych potrzebach.</li>
+                    </ol>
                 </div>
             </div>
         </div>

@@ -97,8 +97,8 @@ function Form() {
                         </div>
                         <div className={s.personsContainer}>
                             <div>
-                                <p className={s.inputsTitle}>Grupa(wszyscy)</p>
-                                <input className={s.persons} placeholder='Ilosc osob?' name='persons' onChange={(e) => setPerson(e.target.value)} id='persons'/>
+                                <p className={s.inputsTitle}>Grupa (dorośli + dzieci)</p>
+                                <input className={s.persons} placeholder='Ilosc wszystkich osob?' name='persons' onChange={(e) => setPerson(e.target.value)} id='persons'/>
                             </div>
                             <div>
                                 <p className={s.inputsTitle}>Dzieci powyżej 6 roku</p>

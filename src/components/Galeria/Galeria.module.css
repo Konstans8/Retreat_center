@@ -7,28 +7,27 @@
     /* background-image: url(../../img/hall15.jpeg); */
     background: rgba(40, 40, 40, 0.4);
     background-size: cover;
-    height: 1200px;
+    height: 1500px;
 }
 
 .content {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     margin-bottom: 50px;
     color: white;
-    background: rgba(40, 40, 40, 0.8);
+    background: rgba(40, 40, 40, 0.9);
     display: inline-block;
     padding: 5px;
     border-radius: 10px;
 }
 
 .descr {
-    max-width: 1200px;
-    padding: 20px;
-    background: rgba(40, 40, 40, 0.8);
     color: white;
-    border-radius: 10px;
 }
 
 .image {
@@ -38,8 +37,12 @@
 
 
 @media(max-width: 800px) {
-    .bgimg {
-        height: 700px;
+
+    .content {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .title {
@@ -48,6 +51,18 @@
 
     .descr {
         font-size: 14px;
-        max-width: 600px;
+    }
+}
+
+@media(max-width: 600px) {
+    .bgimg {
+        height: 900px;
+    }
+}
+
+
+@media(max-width: 400px) {
+    .bgimg {
+        height: 850px;
     }
 }

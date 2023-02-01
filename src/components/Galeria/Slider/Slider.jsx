@@ -1,6 +1,6 @@
 // import Carousel from 'react-bootstrap/Carousel';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-// import s from './Slider.module.css'
+
 
 
 // function Slider() {
@@ -92,23 +92,29 @@
 // export default Slider
 
 
+// import s from './Slider.module.css'
 
-
-import slide1 from '../../../img/slide1.jpeg'
-import slide2 from '../../../img/slide2.jpeg'
-import slide3 from '../../../img/slide3.jpeg'
-import slide4 from '../../../img/slide4.jpeg'
-import slide5 from '../../../img/slide5.jpeg'
-import slide6 from '../../../img/slide6.jpeg'
-import slide7 from '../../../img/slide7.jpeg'
-import slide8 from '../../../img/slide8.jpeg'
-import slide9 from '../../../img/slide9.jpeg'
-import slide10 from '../../../img/slide10.jpeg'
-import slide11 from '../../../img/slide11.jpeg'
-import slide12 from '../../../img/slide12.jpeg'
-import slide13 from '../../../img/slide13.jpeg'
-import slide14 from '../../../img/slide14.jpeg'
-import slide15 from '../../../img/slide15.jpeg'
+import slide1 from '../../../img/slide1.webp'
+import slide2 from '../../../img/slide2.webp'
+import slide3 from '../../../img/slide3.webp'
+import slide4 from '../../../img/slide4.webp'
+import slide5 from '../../../img/slide5.webp'
+import slide6 from '../../../img/slide6.webp'
+import slide7 from '../../../img/slide7.webp'
+import slide8 from '../../../img/slide8.webp'
+import slide9 from '../../../img/slide9.webp'
+import slide10 from '../../../img/slide10.webp'
+import slide11 from '../../../img/slide11.webp'
+import slide12 from '../../../img/slide12.webp'
+import slide13 from '../../../img/slide13.webp'
+import slide14 from '../../../img/slide14.webp'
+import slide15 from '../../../img/slide15.webp'
+import slide16 from '../../../img/slide16.webp'
+import slide17 from '../../../img/slide17.webp'
+import slide18 from '../../../img/slide18.webp'
+import slide19 from '../../../img/slide19.webp'
+import slide20 from '../../../img/slide20.webp'
+import slide21 from '../../../img/slide21.webp'
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -142,48 +148,87 @@ export default function Slider() {
       >
         <SwiperSlide>
           <img className='image' src={slide1} alt='imageName'/>
+          
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide2} alt='imageName'/>
+            
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide3} alt='imageName'/>
+                 
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide4} alt='imageName'/>
+          
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide5} alt='imageName'/>
+          
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide6} alt='imageName'/>
+         
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide7} alt='imageName'/>
+        
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide8} alt='imageName'/>
+          
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide9} alt='imageName'/>
+        
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide10} alt='imageName'/>
+
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide11} alt='imageName'/>
+          
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide12} alt='imageName'/>
+
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide13} alt='imageName'/>
+
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide14} alt='imageName'/>
+
         </SwiperSlide>
         <SwiperSlide>
           <img className='image' src={slide15} alt='imageName'/>
+
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide16} alt='imageName'/>
+
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide17} alt='imageName'/>
+
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide18} alt='imageName'/>
+
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide19} alt='imageName'/>
+
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide20} alt='imageName'/>
+
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className='image' src={slide21} alt='imageName'/>
+
         </SwiperSlide>
       </Swiper>
     </>

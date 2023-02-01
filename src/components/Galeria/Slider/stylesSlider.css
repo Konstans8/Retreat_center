@@ -1,6 +1,7 @@
 .swiper {
   width: 100%;
   height: 100%;
+  margin-bottom: 30px;
 }
 
 .swiper-slide {
@@ -14,8 +15,21 @@
 }
 
 .image {
-  /* width: 700px; */
+  /* width: 1200px; */
   height: 900px;
+}
+
+/* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 70px;
+} */
+
+
+
+@media(max-width: 600px) {
+  .image {
+    /* width: 700px; */
+    height: 400px;
+  }
 }
 
 

@@ -4,7 +4,7 @@
 }
 
 .bgimg {
-    background-image: url(../../img/kitchen2.jpeg);
+    background-image: url(../../img/kitchen2.webp);
     background-size: cover;
     height: 1200px;
 }
@@ -14,7 +14,7 @@
 }
 
 .title {
-    background: rgba(40, 40, 40, 0.8);
+    background: rgba(40, 40, 40, 0.9);
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -24,7 +24,7 @@
 .descr {
     max-width: 700px;
     padding: 20px;
-    background: rgba(40, 40, 40, 0.8);
+    background: rgba(40, 40, 40, 0.9);
     color: white;
     border-radius: 10px;
 }
