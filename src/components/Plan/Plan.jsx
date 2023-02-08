@@ -7,16 +7,16 @@ function Plan() {
                 <div className={s.content}>
                     <h1 className={s.title}>Regulamin</h1>
                     <ol className={s.descr}>
-                        <li>Godziny ciszy: Przestrzegaj ciszy od 22:00 do 6:00.</li>
-                        <li>Czystość: Dbaj o czystość swojego pokoju i wspólnych pomieszczeń.</li>
-                        <li>Palenie i alkohol: Palenie i spożywanie alkoholu są surowo zabronione na terenie ośrodka.</li>
-                        <li>Goście: Nie wolno wpuszczać gości do ośrodka.</li>
-                        <li>Jedzenie: Nie wolno przynosić zewnętrznego jedzenia lub napojów do ośrodka. Posiłki są zapewnione.</li>
-                        <li>Urządzenia elektroniczne: Ogranicz korzystanie z urządzeń elektronicznych (komórek, laptopów itp.) i nie naruszaj spokojnej atmosfery ośrodka.</li>
-                        <li>Mienie: Nie uszkadzaj ani nie usuwaj mienia należącego do ośrodka.</li>
+                        <li>Szanuj godziny ciszy: Od 22:00 do 7:00 goście są proszeni o zachowanie spokoju i szacunku w pomieszczeniach wspólnych i sypialniach.</li>
+                        <li>Zakaz palenia i używania narkotyków: Palenie i używanie narkotyków, w tym marihuany, jest zabronione na terenie posesji.</li>
+                        <li>Zachowaj czystość: Goście są odpowiedzialni za utrzymanie czystości swoich sypialni i wspólnych przestrzeni.</li>
+                        <li>Goście: Goście nie mogą zapraszać gości ani bawić gości bez wcześniejszej zgody ze strony personelu ośrodka wypoczynkowego.</li>
+                        <li>Picie alkoholu: Alkohol może być spożywany tylko w wyznaczonych obszarach i nie może być przynoszony do sypialni.</li>
+                        <li>Jedzenie: Goście są proszeni aby nie przynosić jedzenia do pokoi, gdyby posiadali wlasne jedzenie, nalezy po sobie posprzatać.</li>
+                        <li>Bezpieczeństwo pożarowe: Goście muszą przestrzegać wszystkich zasad bezpieczeństwa pożarowego, w tym odpowiedzialnego używania kominków i świec i zgłaszania wszelkich usterek.</li>
+                        <li>Uszkodzenie własności: Goście są odpowiedzialni za jakiekolwiek uszkodzenia, jakie spowodują na własności i mogą być obciążeni kosztami napraw lub wymiany.</li>
                         <li>Szacunek: Okazuj szacunek dla innych uczestników, personelu i mienia.</li>
-                        <li>Sytuacje nagłe: W przypadku sytuacji nagłej niezwłocznie skontaktuj się z personel.</li>
-                        <li>Leki: Trzymaj wszystkie leki w oryginalnych opakowaniach i poinformuj personel o specjalnych potrzebach.</li>
+                        <li>Zameldowanie i wymeldowanie: Goście muszą przestrzegać wyznaczonych godzin zameldowania i wymeldowania i powiadamiać personel ośrodka wypoczynkowego o jakichkolwiek zmianach z wyprzedzeniem.</li>
                     </ol>
                 </div>
             </div>

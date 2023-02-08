@@ -30,9 +30,15 @@
     background: rgba(40, 40, 40, 0.9);
     color: white;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 @media(max-width: 800px) {
+    .bgimg {
+        background-position: center;
+        height: 1600px;
+    }
+
     .title {
         font-size: 20px;
     }
