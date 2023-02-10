@@ -82,7 +82,7 @@ function Form() {
     return (
         <div className={s.formContainer}>
             <div className={s.formArea}>
-                <form className={s.form} action="https://jsonplaceholder.typicode.com/posts" method='POST' >
+                <form className={s.form} action="../../sendmail.php" method='POST' >
                     <h2 className={s.title}>Rezerwacja grup zorganizowanych</h2>      
                     <div className={s.inputsContainer}>
                         <div className={s.dateContainer}>
@@ -127,7 +127,7 @@ function Form() {
                     <p className={s.result} id='price' data-editorblocktype="Text" name='RESULTS'>{result} zl</p>
 
                     <div className={s.checkbox}>
-                        <input className={s.checkboxInput} type="checkbox" name="accepting to the processing of personal data" id="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)}/>
+                        <input className={s.checkboxInput} type="checkbox" name="accepting-data" id="checkbox" checked={isChecked} onChange={() => setIsChecked(!isChecked)}/>
                         <span>Wyrażam zgodę na przetwarzanie danych</span>
                     </div>
                     
