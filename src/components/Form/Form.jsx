@@ -102,21 +102,21 @@ function Form() {
                             </div>
                             <div>
                                 <p className={s.inputsTitle}>Dzieci powyżej 6 roku</p>
-                                <input className={s.persons} placeholder='Ilosc osob?' name='children over 6 years old'/>
+                                <input className={s.persons} placeholder='Ilosc osob?' name='young'/>
                             </div>
                             <div>
                                 <p className={s.inputsTitle}>Dzieci poniżej 6 roku</p>
-                                <input className={s.persons} placeholder='Ilosc osob?' name='children under 6 years old'/>
+                                <input className={s.persons} placeholder='Ilosc osob?' name='children'/>
                             </div>
                         </div>
                         <div className={s.checkboxContainer}>
                             <div className={s.checkboxItem}>
                                 <p className={s.inputsTitle}>Sala konferencyjna dla 80 osób</p>
-                                <input type='checkbox' className={s.check} name='hall for 80 persons' value={(Number(hall80)) ? 0 : 230} onChange={(e) => setHall80(e.target.value)}/>
+                                <input type='checkbox' className={s.check} name='big-hall' value={(Number(hall80)) ? 0 : 230} onChange={(e) => setHall80(e.target.value)}/>
                             </div>
                             <div className={s.checkboxItem}>
                                 <p className={s.inputsTitle}>Sala konferencyjna dla 25 osób</p>
-                                <input type='checkbox' className={s.check} name='hall for 25 persons' value={(Number(hall25)) ? 0 : 130} onChange={(e) => setHall25(e.target.value)}/>
+                                <input type='checkbox' className={s.check} name='small-hall' value={(Number(hall25)) ? 0 : 130} onChange={(e) => setHall25(e.target.value)}/>
                             </div>
                         </div>
                         <div className={s.btnContainer}>

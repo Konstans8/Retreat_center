@@ -38,6 +38,7 @@ function Modal({active, setActive}) {
                     <textarea className={s.textarea}  name="message" />
                 </div>
                 <input className={s.submit} type="submit" value="Wyslij" disabled={!isChecked}/>
+                
                 {/* <div>
                     <MdBuildCircle className={s.build}/>
                 </div>

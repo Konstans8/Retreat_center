@@ -1,0 +1,42 @@
+.MessageSuccessContainer {
+    background-image: url(../Home/Budynek.png);
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    width: 300px;
+    height: 500px;
+    background:rgba(71, 64, 64, 0.9);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.icon {
+    font-size: 100px;
+    color: white;
+}
+
+.text {
+    font-size: 26px;
+    text-align: center;
+    color: white;
+}
+
+
+
+@media(max-width: 460px) {
+    .display {
+        width: 260px;
+        height: 300px;
+    }
+}
+
+
