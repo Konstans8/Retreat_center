@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="https://i.ibb.co/9cZ1skh/retrace-center.jpg" alt="logo-project"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-%22react%22%3A%20%22%5E18.2.0%22%2C-blue"/>
+  <img src="https://img.shields.io/badge/Licence-MIT-red"/>
+</p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
